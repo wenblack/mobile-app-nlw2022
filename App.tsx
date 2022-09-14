@@ -1,10 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {   StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+
+interface ButtonProps {
+  title :string
+}
+
+function Button (props: ButtonProps){
+  return(
+    <TouchableOpacity  style={styles.button}>
+      <Text>
+        {props.title}
+      </Text>
+    </TouchableOpacity>
+  )
+}
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Button title='Hello NLW'/>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +31,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button:{
+    backgroundColor : 'blue',
+    padding:15,
+    borderRadius:5
+  }
 });
