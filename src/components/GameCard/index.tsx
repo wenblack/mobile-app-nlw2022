@@ -27,6 +27,7 @@ export function GameCard({ data, ...rest }: Props) {
       <ImageBackground
         style={styles.cover}
         source={{ uri: data.bannerUrl }}
+        resizeMode='contain'
       >
 
         <LinearGradient

@@ -15,6 +15,20 @@ export const styles = StyleSheet.create({
   },
   logo: {
     width: 72,
-    height: 40
+    height: 40,
+  },
+  right: {
+    width: 20,
+    height: 20
+  },
+  bannerImg: {
+    width: 80,
+    height: 100,
+    borderRadius: 8,
+    alignSelf: 'center',
+    marginTop: 32
+  },
+  contentList: {
+
   }
 });
